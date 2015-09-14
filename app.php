@@ -11,7 +11,7 @@
 
 <Response>
 <?php if(!$name = $people[$_REQUEST['From']]) { ?>
-    <Say language="ja-jp" voice="woman">お電話ありがとうございます。こちらはトゥイリオシステムです。担当におつなぎいたしますので、ご用件をお話しいただき、しばしそのままでお待ち下さい。</Say>
+    <Say language="ja-jp" voice="woman">お電話ありがとうございます。こちらはトゥイリオシステムです。担当におつなぎいたしますので、発信音の後にご用件をお話しいただき、しばしそのままでお待ち下さい。</Say>
     <Record action="<?php echo $app2url ?>" method="POST" maxLength="60" />
     <Say language="ja-jp" voice="woman">申し訳ありません。もう一度お掛け直しください</Say>
 <?php } else { ?>
